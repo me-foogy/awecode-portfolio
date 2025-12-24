@@ -17,17 +17,17 @@
         <nav class="navbar" aria-label="Navigation Bar">
 
             <div class="logo">
-                <a href="#">SWORUP</a>
+                <a href="#" aria-label="Go to homepage">SWORUP</a>
             </div>
 
-           <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle Navigation Menu">
+           <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+                <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-controls="navigation">
                 <span></span>
                 <span></span>
                 <span></span>
                 </label>
 
-            <ul id="navigation" class="nav-links">
+            <ul id="navigation" class="nav-links" role="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -51,7 +51,7 @@
         <section id="about">
             <h2>ABOUT ME</h2>
           <div class="about-left-content">
-            <div class="about-image" aria-label="illustrated character"></div>
+            <div class="about-image" role="img" aria-label="illustrated character" alt="A doodle character outline"></div>
             <div class="about-description">
               <p>I am a passionate and dedicated aspiring full-stack developer with a strong interest in building practical, user-focused digital solutions. Currently pursuing my academic journey in the field of technology, I actively work on improving my skills through hands-on projects, continuous learning, and real-world problem solving.</p>
               <p>Beyond development, I have experience in leadership and collaboration through my involvement with technical communities and student organizations. These experiences have helped me develop strong communication skills, teamwork, and the ability to manage projects effectively.</p>
@@ -67,21 +67,21 @@
             <p>GRAPHICS DESIGN</p>
             <p>WEB DEVELOPMENT</p>
           </div>
-          <div class="carousel">
+          <div class="carousel" role="list">
             <div class="group">
-              <div class="card"><img src="assets/icons/react.png"></div>
-              <div class="card"><img src="assets/icons/node.png"></div>
-              <div class="card"><img src="assets/icons/next.png"></div>
-              <div class="card"><img src="assets/icons/mysql.png"></div>
-              <div class="card"><img src="assets/icons/mongo.png"></div>
-              <div class="card"><img src="assets/icons/tailwind.png"></div>
-              <div class="card"><img src="assets/icons/github.png"></div>
-              <div class="card"><img src="assets/icons/render.png"></div>
-              <div class="card"><img src="assets/icons/vercel.png"></div>
-              <div class="card"><img src="assets/icons/figma.png"></div>
-              <div class="card"><img src="assets/icons/illustrator.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/react.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/node.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/next.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/mysql.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/mongo.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/tailwind.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/github.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/render.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/vercel.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/figma.png"></div>
+              <div class="card" role="listitem"><img src="assets/icons/illustrator.png"></div>
             </div>
-            <div aria-hidden class="group">
+            <div aria-hidden="true" class="group">
               <div class="card"><img src="assets/icons/react.png"></div>
               <div class="card"><img src="assets/icons/node.png"></div>
               <div class="card"><img src="assets/icons/next.png"></div>
@@ -101,8 +101,8 @@
           <h2>PROJECTS</h2>
           <div class="project-container"> 
 
-            <div class="project-card">
-              <a href="https://foogynewslettervercel.vercel.app/"><img src="assets/project-1.png" class="project-image"></a>
+            <article class="project-card">
+              <a href="https://foogynewslettervercel.vercel.app/"><img src="assets/project-1.png" class="project-image" alt="Screenshot of the Foogy Newsletter project"></a>
               <h4>Foogy Newsletter</h4>
               <p>Foogy Newsletter is a full stack blog site in which the users can add their own articles and view the articles of other people. The articles are divided into different genres and the content can be filtered using the genres.</p>
               <div class="project-tech-stack-container">
@@ -113,10 +113,10 @@
                 <span class="project-tech-stack">Vercel</span>
                 <span class="project-tech-stack">Render</span>
               </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-              <a href="https://www.linkedin.com/posts/sworup-karki-204511198_well-who-knew-making-interactive-components-activity-7404205135310000128-xv36?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5ZlOQB3gqc06AIjrJyVQhQlt6FVeUC8nA"><img src="assets/project-2.png" class="project-image"></a>
+            <article class="project-card">
+              <a href="https://www.linkedin.com/posts/sworup-karki-204511198_well-who-knew-making-interactive-components-activity-7404205135310000128-xv36?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5ZlOQB3gqc06AIjrJyVQhQlt6FVeUC8nA"><img src="assets/project-2.png" class="project-image" alt="Image of the login and signup mock app having interactive elements"></a>
               <h4>Dynamic login and auth app</h4>
               <p>This project is a simple login and authentication app that used spline for the rendering of 3d interactive elements. This project also uses regular expressions to check if the password contains specific characters.</p>
               <div class="project-tech-stack-container">
@@ -126,10 +126,10 @@
                 <span class="project-tech-stack">Mongo DB</span>
                 <span class="project-tech-stack">Spline</span>
               </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-              <a href="https://drive.google.com/file/d/1P6w5HgttmxWJZWFD5fA50OJgmhadKkOm/view?usp=sharing"><img src="assets/project-3.png" class="project-image"></a>
+            <article class="project-card">
+              <a href="https://drive.google.com/file/d/1P6w5HgttmxWJZWFD5fA50OJgmhadKkOm/view?usp=sharing"><img src="assets/project-3.png" class="project-image" alt="Screenshot of the homepage and esewa load page of the app"></a>
               <h4>QuickFare</h4>
               <p>QuickFare is a mobile app that is designed to simplify bus fare payments and management. Users can load credits into the app and the credits are automatically reduced based on the start and end destinations of the user.</p>
               <div class="project-tech-stack-container">
@@ -140,10 +140,10 @@
                 <span class="project-tech-stack">Esewa</span>
                 <span class="project-tech-stack">Firebase</span>
               </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-              <img src="assets/project-4.png" class="project-image">
+            <article class="project-card">
+              <img src="assets/project-4.png" class="project-image" alt="Screenshot of the object detection model with it's confidence">
               <h4>Netra: Smart Vision Assistant</h4>
               <p>Netra is an app that is built for the visually impaired people for urban navigationa and assistance. The app uses the yolov11 model for the object detection and the depthanything model for the distance estimation. The app also uses the overpass api for nearby Point of Interests identification.</p>
               <div class="project-tech-stack-container">
@@ -154,7 +154,7 @@
                 <span class="project-tech-stack">Depth Anything</span>
                 <span class="project-tech-stack">Python</span>
               </div>
-            </div>
+            </article>
           </div>
         </section>
 
@@ -211,14 +211,14 @@
           <h2>Sworup Karki</h2>
           <p>A passionate and aspiting full-stack developer. I am a dedicated learner and aspiring developer, with a focus on developing innovative solutions.</p>
       </div>
-      <div class="footer-right">
+      <nav class="footer-right" aria-label="Footer navigation">
         <h2>QUICK LINKS</h2>
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
     </footer>
   </body>
 
