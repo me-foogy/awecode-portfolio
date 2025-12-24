@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Sworup karki</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
+    <header id="header">
         <nav class="navbar" aria-label="Navigation Bar">
 
             <div class="logo">
-                <a href="#home">SWORUP</a>
+                <a href="#">SWORUP</a>
             </div>
 
            <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -35,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <seciton id="hero">
             <div class="hero-content">
               <h1>HELLO! I AM <span class="highlight-name">SWORUP KARKI</span></h1>
@@ -96,15 +96,129 @@
             </div>
           </div>
         </section>
+
         <section id="projects">
+          <h2>PROJECTS</h2>
+          <div class="project-container"> 
 
+            <div class="project-card">
+              <a href="https://foogynewslettervercel.vercel.app/"><img src="assets/project-1.png" class="project-image"></a>
+              <h4>Foogy Newsletter</h4>
+              <p>Foogy Newsletter is a full stack blog site in which the users can add their own articles and view the articles of other people. The articles are divided into different genres and the content can be filtered using the genres.</p>
+              <div class="project-tech-stack-container">
+                <span class="project-tech-stack">React JS</span>
+                <span class="project-tech-stack">Node JS</span>
+                <span class="project-tech-stack">Next JS</span>
+                <span class="project-tech-stack">Mongo DB</span>
+                <span class="project-tech-stack">Vercel</span>
+                <span class="project-tech-stack">Render</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <a href="https://www.linkedin.com/posts/sworup-karki-204511198_well-who-knew-making-interactive-components-activity-7404205135310000128-xv36?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC5ZlOQB3gqc06AIjrJyVQhQlt6FVeUC8nA"><img src="assets/project-2.png" class="project-image"></a>
+              <h4>Dynamic login and auth app</h4>
+              <p>This project is a simple login and authentication app that used spline for the rendering of 3d interactive elements. This project also uses regular expressions to check if the password contains specific characters.</p>
+              <div class="project-tech-stack-container">
+                <span class="project-tech-stack">React JS</span>
+                <span class="project-tech-stack">Node JS</span>
+                <span class="project-tech-stack">Next JS</span>
+                <span class="project-tech-stack">Mongo DB</span>
+                <span class="project-tech-stack">Spline</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <a href="https://drive.google.com/file/d/1P6w5HgttmxWJZWFD5fA50OJgmhadKkOm/view?usp=sharing"><img src="assets/project-3.png" class="project-image"></a>
+              <h4>QuickFare</h4>
+              <p>QuickFare is a mobile app that is designed to simplify bus fare payments and management. Users can load credits into the app and the credits are automatically reduced based on the start and end destinations of the user.</p>
+              <div class="project-tech-stack-container">
+                <span class="project-tech-stack">Flutter</span>
+                <span class="project-tech-stack">Dart</span>
+                <span class="project-tech-stack">IoT</span>
+                <span class="project-tech-stack">Figma</span>
+                <span class="project-tech-stack">Esewa</span>
+                <span class="project-tech-stack">Firebase</span>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="assets/project-4.png" class="project-image">
+              <h4>Netra: Smart Vision Assistant</h4>
+              <p>Netra is an app that is built for the visually impaired people for urban navigationa and assistance. The app uses the yolov11 model for the object detection and the depthanything model for the distance estimation. The app also uses the overpass api for nearby Point of Interests identification.</p>
+              <div class="project-tech-stack-container">
+                <span class="project-tech-stack">Flutter</span>
+                <span class="project-tech-stack">Dart</span>
+                <span class="project-tech-stack">Deep learning</span>
+                <span class="project-tech-stack">YOLO</span>
+                <span class="project-tech-stack">Depth Anything</span>
+                <span class="project-tech-stack">Python</span>
+              </div>
+            </div>
+          </div>
         </section>
-        <section id="contact">
 
+        <section id="contact">
+          <h2>CONTACT</h2>
+          <div class="contact-container">
+            <div class="contact-container-right">
+              <p>Let's Start a </p>
+              <p>Project Together</p>
+            </div>
+            <div class="contact-container-left">
+              <div class="left-top">
+                <h4>Contact Information</h4>
+                <p>Feel free to reach out to me using any of these methods.</p>
+              </div>
+              <div class="left-mid">
+                <div class="left-mid-card">
+                    <img src="assets/icons/email.png">
+                  <div class="card-info">
+                    <p>Email</p>
+                    <p>sworupkarki1020@gmail.com</p>
+                  </div>
+                </div>
+                <div class="left-mid-card">
+                    <img src="assets/icons/phone.png">
+                  <div class="card-info">
+                    <p>Phone</p>
+                    <p>+977 9863331386</p>
+                  </div>
+                </div>
+                <div class="left-mid-card">
+                    <img src="assets/icons/linkedin.png">
+                  <div class="card-info">
+                    <p>LinkedIn</p>
+                    <p>sworupkarki</p>
+                  </div>
+                </div>
+              </div>
+              <div class="left-bottom">
+                <p>Follow Me</p>
+                <div class="left-bottom-icons">
+                  <a href="https://www.facebook.com/sworup.karki.71/"><img src="assets/icons/facebook.png"></a>
+                  <a href="https://www.instagram.com/i_am_sworup/"><img src="assets/icons/instagram.png"></a>
+                  <a href="https://discord.com/users/.foogy"><img src="assets/icons/discords.png"></a>
+                  <a href="https://www.linkedin.com/in/sworup-karki-204511198/"><img src="assets/icons/linkedin.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+      <div class="footer-left">
+          <h2>Sworup Karki</h2>
+          <p>A passionate and aspiting full-stack developer. I am a dedicated learner and aspiring developer, with a focus on developing innovative solutions.</p>
+      </div>
+      <div class="footer-right">
+        <h2>QUICK LINKS</h2>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </footer>
   </body>
 
