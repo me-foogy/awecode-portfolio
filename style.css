@@ -41,6 +41,8 @@ body {
 .nav-links{
     position: fixed;
     display: flex;
+    font-size: 2rem;
+    gap: 1rem;
     top: 0;
     right: -100%;
     width: 100%;
@@ -54,9 +56,21 @@ body {
     z-index: 998;
 }
 
+.nav-links li{
+    width: 100vw;
+}
+.nav-links a:hover{
+    background-color: #444;
+}
+
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    width: 100vw;
+    padding: 1rem 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .menu-toggle:checked ~ .nav-links{
@@ -248,13 +262,26 @@ body {
         height: auto;
         flex-direction: row;
         gap: 2rem;
+        font-size: 1.2rem;
         right: 0;
         transition: none;
         background: none;
     }
 
+    .nav-links a:hover{
+    background-color: white;
+    color: #FFB22C;
+    }
+
+    .nav-links li{
+    width: auto;
+    }
+
     .nav-links a{
         color: black;
+        padding: 0;
+        display: inline;
+        width: auto;
     }
 
     #hero {
