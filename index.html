@@ -222,4 +222,14 @@
     </footer>
   </body>
 
+  <script>
+    const checkbox = document.querySelector('.menu-toggle');
+    const nav = document.querySelectorAll('.nav-links a');
+    nav.forEach(navItem=>{
+      navItem.addEventListener('click', ()=>{
+        checkbox.checked=false;
+      })
+    })
+  </script>
+
 </html>
