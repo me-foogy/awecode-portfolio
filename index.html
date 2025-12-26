@@ -198,7 +198,7 @@
                 <div class="left-bottom-icons">
                   <a href="https://www.facebook.com/sworup.karki.71/"><img src="assets/icons/facebook.png" alt="facebook logo"></a>
                   <a href="https://www.instagram.com/i_am_sworup/"><img src="assets/icons/instagram.png" alt="instagram logo"></a>
-                  <a href="https://discord.com/users/.foogy"><img src="assets/icons/discords.png" alt="discord logo"></a>
+                  <a href="https://discordapp.com/users/695670357948104715"><img src="assets/icons/discords.png" alt="discord logo"></a>
                   <a href="https://www.linkedin.com/in/sworup-karki-204511198/"><img src="assets/icons/linkedin.png" alt="LinkedIn Logo"></a>
                 </div>
               </div>
@@ -221,5 +221,15 @@
       </nav>
     </footer>
   </body>
+
+  <script>
+    const checkbox = document.querySelector('.menu-toggle');
+    const nav = document.querySelectorAll('.nav-links a');
+    nav.forEach(navItem=>{
+      navItem.addEventListener('click', ()=>{
+        checkbox.checked=false;
+      })
+    })
+  </script>
 
 </html>
